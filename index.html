@@ -1,11 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>一生最爱的你</title>
 
-    <title>一生最爱的你 </title>
+<link rel="stylesheet" type="text/css" href="JoynBackground.css"/>
+<style>
 
-    <style type="text/css">
+
+
+#zhushi{ background-image: url(del.png); text-align: center; margin: 300px auto; padding: 20px; width: 60%; border-radius: 30px; }
+</style>
+
+<script src="jquery-1.10.2.js"></script>
+<script type="text/javascript" src="JoynBackground.js"></script>
+<script>
+$(document).ready(function(){
+	JoynBackground(2,10000); //场景动画类型和时间
+	/* 场景动画类型：【1】拉近【2】拉远【3】幻灯片显示 */
+})
+</script>
+
+</head>
+<body><script src="/demos/googlegg.js"></script>
+
+  <style type="text/css">
         *
         {
             padding: 0;
@@ -287,6 +306,15 @@
             <li></li>
         </ul>
     </div>
+<!-- 背景[就这么简单] -->
+<div id="JoynBackground">
+	<img src="1.jpg" name="1"/>
+    <img src="2.jpg" name="2"/>
+    <img src="3.jpg" name="3"/>
+</div>
+<!-- 背景 -->
+
+
     <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript">
         $(function () {
