@@ -12,6 +12,7 @@
 
 <script src="js/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/JoynBackground.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script>
 $(document).ready(function(){
 	JoynBackground(2,10000); //场景动画类型和时间
@@ -19,6 +20,24 @@ $(document).ready(function(){
 })
 </script>
 
+ 
+<script type="text/javascript">
+        $(function () {
+            $(".heartPic li").hover(function () {
+                $(this).addClass("on");
+                $(this).find("img").animate({ "width": "200px", "height": "200px" });
+                $(this).find("div").animate({ "width": "200px", "height": "200px" });
+                $(this).find(".pTxt").animate({ "width": "200px", "height": "20px" });
+                $(this).find("p").addClass("showDiv");
+            }, function () {
+                $(this).animate({ height: "100px" }, 100).removeClass("on");
+                $(this).find("img").stop(true, true).animate({ "width": "100px", "height": "100px" });
+                $(this).find("div").stop(true, true).animate({ "width": "100px", "height": "100px" });
+                $(this).find(".pTxt").stop(true, true).animate({ "width": "0px", "height": "0px" });
+            });
+        })
+</script>
+	
 </head>
 <body>
 
@@ -316,23 +335,6 @@ $(document).ready(function(){
 <!-- 背景 -->
 
 
-    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-	
-    <script type="text/javascript">
-        $(function () {
-            $(".heartPic li").hover(function () {
-                $(this).addClass("on");
-                $(this).find("img").animate({ "width": "200px", "height": "200px" });
-                $(this).find("div").animate({ "width": "200px", "height": "200px" });
-                $(this).find(".pTxt").animate({ "width": "200px", "height": "20px" });
-                $(this).find("p").addClass("showDiv");
-            }, function () {
-                $(this).animate({ height: "100px" }, 100).removeClass("on");
-                $(this).find("img").stop(true, true).animate({ "width": "100px", "height": "100px" });
-                $(this).find("div").stop(true, true).animate({ "width": "100px", "height": "100px" });
-                $(this).find(".pTxt").stop(true, true).animate({ "width": "0px", "height": "0px" });
-            });
-        })
-    </script>
+
 </body>
 </html>
